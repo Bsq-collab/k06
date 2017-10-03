@@ -11,12 +11,14 @@ app = Flask(__name__)
 
 def formfunct():
     print app;
-    print request.headers;
+'''    print request.headers;
     print request.method;
     print request.args;
-    print request.form;
+    print request.form;'''
     return render_template("form.html");
 """
+EXPERIMENT PRINT STATEMENTS
+
 @app.route("/auth")
 def authenticate():
     print "\n\n\n"
@@ -30,9 +32,11 @@ def authenticate():
     print "form"
    # print request.form
 """
-@app.route("/hi")
+@app.route("/hi")#this line redirects user after submitting the form
 def sayHi():
     return render_template("hello.html", name= request.args["nombre"])
+#sets name blank in the html hello file to the user input.
+
 if __name__ == "__main__":
     app.debug = True
     app.run()
