@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>
+      form
+    </title>
+  </head>
+
+  <body>
+
+    <form>
+      text:
+      <br>
+      <input type= "text">
+      <br>
+      <input type="submit" value= "Submit">
+    </form>
+    
+    </body
+
+  </html>
